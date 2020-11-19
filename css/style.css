@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 1600px;
+    display: grid;
+    grid-template-areas:
+    'hd hd hd hd hd'
+    'nv sc sc sc sc'
+    'nv sc sc sc sc'
+    'nv sc sc sc sc'
+    'ft ft ft ft ft';
+    grid-template-rows: 200px, 400px, 400px, 400px, 200px;
+}
+
+.header {
+    grid-area: hd;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: blanchedalmond;
+}
+
+.header > img {
+    width: 8%;
+    height: auto;
+    padding-left: 50px;
+}
+
+.header > h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 300px;
+}
+
+.wrapper > section {
+    grid-area: sc;
+    background-image: url("../img/logga.jpg");
+}
+
+.footer {
+    grid-area: ft;
+    background-color: gray;
+}
